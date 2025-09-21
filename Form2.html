@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Student Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 8px 10px;
+      margin-top: 4px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background: #2b7de9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    input[type="submit"]:hover {
+      background: #1a5fcc;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Student Details</h2>
+
+  <form method="POST" action="https://script.google.com/macros/s/AKfycbz-LeIfistxLSEpw-cW5xqE1ioWQ_zldK3d9wD1BDS6YR8HISZGqSjOdYxZ2XN_Y0c/exec">
+    <label>Name:
+      <input type="text" name="name" required>
+    </label>
+    <label>Roll No:
+      <input type="text" name="roll" required>
+    </label>
+    <label>Phone:
+      <input type="text" name="phone" required>
+    </label>
+    <label>Email:
+      <input type="email" name="email">
+    </label>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
